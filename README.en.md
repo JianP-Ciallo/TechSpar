@@ -41,7 +41,7 @@ Never run both branches against the same writable data directory. Use a separate
 - Adaptive focused drills backed by knowledge, mastery, and training history
 - Resume mock interviews with a durable TypeScript state machine
 - JD-specific preparation and questioning strategies
-- Realtime Copilot with ASR, follow-up prediction, answer guidance, alerts, and optional voiceprint roles
+- Realtime desktop Copilot that captures microphone and system audio separately to tell you and the interviewer apart, with ASR, follow-up prediction, answer guidance, and alerts
 - Long and short recording transcription with structured review
 - Long-term profile, weak-point tracking, and SM-2 review scheduling
 - Personal document library and personal Agent context
@@ -107,12 +107,12 @@ Then open <http://localhost>.
 
 ## Models and optional services
 
-When self-hosting or building the desktop application from source, configure LLM, embedding, DashScope, Tavily, OSS, and Tencent VPR credentials in Settings. Credentials are user-scoped. `.env` only contains bootstrap settings and optional platform fallback models.
+When self-hosting or building the desktop application from source, configure LLM, embedding, DashScope, Tavily, and OSS credentials in Settings. Credentials are user-scoped. `.env` only contains bootstrap settings and optional platform fallback models.
 
 - Any OpenAI-compatible chat and embeddings API is supported.
 - Local embeddings use Transformers.js and ONNX. The default is `Xenova/bge-m3`; it downloads and caches on first use with no Python, PyTorch, or pip dependency.
 - DashScope powers voice input, recording transcription, and Copilot realtime ASR.
-- Tavily adds company research, OSS supports long-audio jobs, and Tencent VPR optionally distinguishes interviewer and candidate voices.
+- Tavily adds company research, and OSS supports long-audio jobs.
 
 ## Validation
 
